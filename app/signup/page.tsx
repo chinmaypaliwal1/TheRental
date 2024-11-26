@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import HeaderMain from "../about/HeaderMain/HeaderMain";
+import Footer from "../about/FooterMain/Footer";
 
 const SignupPage: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -18,7 +20,9 @@ const SignupPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <>
+    <HeaderMain />
+      <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <form
         onSubmit={handleSignup}
         className="bg-white p-6 rounded shadow-md w-full max-w-md"
@@ -77,6 +81,9 @@ const SignupPage: React.FC = () => {
         </p>
       </form>
     </div>
+    <Footer />
+    </>
+    
   );
 };
 

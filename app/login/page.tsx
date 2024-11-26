@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import Footer from "../about/FooterMain/Footer";
+import HeaderMain from "../about/HeaderMain/HeaderMain";
 
 const LoginPage: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -12,6 +14,8 @@ const LoginPage: React.FC = () => {
   };
 
   return (
+    <>
+    <HeaderMain />
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <form
         onSubmit={handleLogin}
@@ -57,6 +61,8 @@ const LoginPage: React.FC = () => {
         </p>
       </form>
     </div>
+    <Footer />
+    </>
   );
 };
 

@@ -48,7 +48,8 @@ const HomeSection = () => {
       <Banner />
       <div className="flex justify-center align-center">
         <h2 className="text-2xl font-bold text-slate-200 mb-4 flex items-center">Available Vehicles</h2>
-        <div className="text-center my-8 text-black ml-10 flex">
+      </div>
+      <div className="text-center text-black mx-auto	">
           <select
             value={filter === "Hourly" ? "Hourly" : `${duration} Days`}
             onChange={(e) => {
@@ -73,14 +74,11 @@ const HomeSection = () => {
             </optgroup>
           </select>
         </div>
-
-
-      </div>
       <div className="flex justify-center">
         <div className="" id="about">
           <section>
             
-            <ol className="group/list grid grid-cols-4 items-center">
+            <ol className="group/list grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 items-center">
               {CardComp.map((card) => (
                 <Card
                   key={card.title}

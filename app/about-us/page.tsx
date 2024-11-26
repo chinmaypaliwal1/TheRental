@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import HeaderMain from "../about/HeaderMain/HeaderMain";
+import Footer from "../about/FooterMain/Footer";
 
 const AboutUs: React.FC = () => {
   return (
@@ -62,6 +63,7 @@ const AboutUs: React.FC = () => {
       </div>
     </section>
     </div>
+    <Footer />
     </>
   );
 };

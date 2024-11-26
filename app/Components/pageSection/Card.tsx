@@ -18,16 +18,16 @@ const TimeAndDateSection: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   };
 
   return (
-    <div className="container mx-auto absolute z-10">
-      <div className="w-fit bg-white text-black rounded-lg p-6 shadow-lg">
+    <div className=" mx-auto absolute z-10">
+      <div className="w-fit bg-white text-black rounded-lg p-6 shadow-lg relative">
         <button
           onClick={onClose}
-          className="text-red-500 mb-4 font-bold"
+          className="text-red-500 mb-4 font-bold top-0 right-2 absolute"
         >
-          Close
+          X
         </button>
         <span className="block text-sm font-medium mb-1">Pickup Date:</span>
-        <div className="mb-4 flex gap-4">
+        <div className="mb-4 flex sm:flex-row flex-col gap-4">
           <div>
             <input
               type="date"
@@ -45,7 +45,7 @@ const TimeAndDateSection: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         </div>
 
         <span className="block text-sm font-medium mb-1">Drop Date:</span>
-        <div className="mb-4 flex gap-4">
+        <div className="mb-4 flex sm:flex-row flex-col gap-4">
           <div>
             <input
               type="date"

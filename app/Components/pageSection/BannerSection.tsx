@@ -11,7 +11,7 @@ const Banner: React.FC = () => {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-between text-white py-56 px-6">
+    <section className="relative   text-white py-56 px-6">
       <div className="absolute inset-0 -z-10">
         <Image 
           src={BannerBg} 
@@ -24,10 +24,10 @@ const Banner: React.FC = () => {
         <div className="absolute inset-0 opacity-50"></div> 
       </div>
 
-      <div className="container mx-auto relative z-10">
-        <div className="w-fit	bg-white text-black rounded-lg p-6 shadow-lg">
+      <div className=" mx-auto relative z-10">
+        <div className="w-fit bg-white text-black rounded-lg p-6 shadow-lg">
           <span className="block text-sm font-medium mb-1">Pickup Date:</span>
-          <div className="mb-4 flex gap-4">
+          <div className="mb-4  flex sm:flex-row flex-col gap-4">
             <div>
               <input
                 type="date"
@@ -45,7 +45,7 @@ const Banner: React.FC = () => {
           </div>
 
           <span className="block text-sm font-medium mb-1">Drop Date:</span>
-          <div className="mb-4 flex gap-4">
+          <div className="mb-4 flex sm:flex-row flex-col gap-4">
             <div>
               <input
                 type="date"

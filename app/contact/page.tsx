@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderMain from "../about/HeaderMain/HeaderMain";
+import Footer from "../about/FooterMain/Footer";
 
 const ContactUs = () => {
   return (
@@ -99,6 +100,7 @@ const ContactUs = () => {
         </div>
       </section>
     </div>
+    <Footer />
     </>
   );
 };
